@@ -1,9 +1,9 @@
 # Introduction
-Décrire le projet en quelques lignes
+Codrix est un blog réalisé dans le but d'apprendre à utiliser correctement le Framework Symfony ainsi que l'utilisation de Twig.
+Le thème du blog sera de partager des petits bouts de codes accompagnés d'une présentation. 
 
 
 # Installation
-Préciser comment installer le projet. Voici un exemple qui va ressembler à la réalité :
 - `git clone git@github.com:Zarwine/codrix.git`
 - Installer les dépendances PHP : `composer install`
 - `php bin/console doctrine:database:create`
@@ -11,4 +11,4 @@ Préciser comment installer le projet. Voici un exemple qui va ressembler à la 
 
 
 # Utilisation
-Lancer le serveur de dév : `php bin/console server:start`
+Lancer le serveur de developpement : `php bin/console server:start`
