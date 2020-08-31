@@ -1,3 +1,6 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
 <h1>Liste des articles</h1>
 <article>
     <h2>Titre de l'article</h2>
@@ -26,3 +29,4 @@
     <p>Quam ob rem cave Catoni anteponas ne istum quidem ipsum, quem Apollo, ut ais, sapientissimum iudicavit; huius enim facta, illius dicta laudantur. De me autem, ut iam cum utroque vestrum loquar, sic habetote.</p>
     <a href="{{ path('blog_show') }}">Lire l'article</a>
 </article>
+{% endblock %}
