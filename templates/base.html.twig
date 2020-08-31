@@ -2,11 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Codrix{% endblock %}</title>
+        <link rel="stylesheet" href="">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+    <nav>
+        <a href="/">Codrix</a>
+        <ul>
+            <a href="/blog"><li>Blog</li></a>
+            <a href="/blog/new"><li>New</li></a>
+        </ul>
+    </nav>
+        <div class="container">
         {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
