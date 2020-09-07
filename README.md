@@ -11,4 +11,4 @@ Le thème du blog sera de partager des petits bouts de codes accompagnés d'une 
 
 
 # Utilisation
-Lancer le serveur de developpement : `php bin/console server:start`
+Lancer le serveur de developpement : `symfony server:start`
