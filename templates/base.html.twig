@@ -8,10 +8,10 @@
     </head>
     <body>
     <nav>
-        <a href="/">Codrix</a>
+        <a href="{{ path('home') }}">Codrix</a>
         <ul>
-            <a href="/blog"><li>Blog</li></a>
-            <a href="/blog/new"><li>New</li></a>
+            <a href="{{ path('blog') }}"><li>Articles</li></a>
+            <a href="{{ path('blog_create') }}"><li>Créer</li></a>
         </ul>
     </nav>
         <div class="container">
