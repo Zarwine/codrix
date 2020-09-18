@@ -7,7 +7,7 @@
 		<article>
 			<h2>{{ article.title }}</h2>
 			<div class="metadata">
-				Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i')}} dans la catégorie Javascript</div>
+				Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i')}} dans la catégorie {{ article.category.title }}</div>
 			<img src="{{ article.image }}" alt="">
             {{ article.content | raw }}
 			<a href="{{ path('blog_show', { 'id' : article.id }) }}">Lire l'article</a>
