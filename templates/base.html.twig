@@ -9,10 +9,17 @@
     <body>
     <nav>
         <a href="{{ path('home') }}">Codrix</a>
-        <ul>
-            <a href="{{ path('blog') }}"><li>Articles</li></a>
-            <a href="{{ path('blog_create') }}"><li>Créer</li></a>
-        </ul>
+        <div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ path('blog') }}">Articles</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ path('blog_create') }}">Créer</a></li>
+                {% if not app.user %}
+                <li class="nav-item"><a class="nav-link" href="{{ path('security_login') }}">Connexion</a></li>
+                {% else %}
+                <li class="nav-item"><a class="nav-link" href="{{ path('security_logout') }}">Déconnexion</a></li>
+                {% endif %}
+            </ul>
+        </div>
     </nav>
         <div class="container">
         {% block body %}{% endblock %}
