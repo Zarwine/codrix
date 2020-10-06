@@ -1,6 +1,5 @@
 # Introduction
 Codrix est un blog réalisé dans le but d'apprendre à utiliser correctement le Framework Symfony ainsi que l'utilisation de Twig.
-Le thème du blog sera de partager des petits bouts de codes accompagnés d'une présentation. 
 
 
 # Installation
